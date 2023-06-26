@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+     overflow: hidden;
+    background: linear-gradient(45deg, black, transparent);
+    width: 100vw;
+}
+
+.card{
+    width: 700px;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 6px;
+}
+
+.heading {
+    width: 100%;
+    background: linear-gradient(45deg, black, #202020 , #5e5e5e3d);
+    padding: 5px 0px;
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px 6px 0px 0px
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 30px;
+    width: calc(100% - 60px);
+}
+.left{
+width: 40%;
+}
+
+
+.nasted_card{
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 3px;
+    border: 1px solid rgb(158, 158, 163);
+    padding: 10px 16px;
+}
+.nasted_card.disable{
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.filter_styles{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter_styles div{
+    width: 50%;
+    text-align: center;
+}
+.filter_styles button{
+    padding: 8px 15px;
+    background: white;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin-bottom: 3px;
+    width: 90%;
+}
+
+.filter_manager{
+    margin: 15px 0px;
+}
+
+.sub-heading{
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.filter_manager .filter_details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -5px;
+}
+.filter_manager .filter_details span{
+    font-size: 15px;
+}
+
+.rotates_flips_btns{
+    display: flex;
+    justify-content: space-between;
+}
+.rotates_flips_btns button{
+    padding: 6px 16px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background: radial-gradient(transparent,#00000082);
+}
+
+.reset{
+    text-align: center;
+    margin-top: 5px;
+}
+.reset button{
+    width: 50%;
+    padding: 8px 15px;
+    background: white;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background: linear-gradient(45deg, black, #202020 , #5e5e5e3d);
+    color: white;
+}
+
+input{
+    height: 1px;
+    width: 100%;
+    padding: 2px 0px;
+    cursor: pointer;
+}
+
+.img_rel button{
+    width: 100%;
+    padding: 8px 15px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-top: 9px;
+    background: linear-gradient(45deg, black, #202020 , #5e5e5e3d);
+    color: white;
+    
+}
+
+.error{
+    width: 75%;
+    margin: auto;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 6px 1px;
+    margin-top: 3px;
+    margin-bottom: -6px;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    width: 100%;
+    display: none;
+    text-align: center;
+}
+
+.choose_file.clickme{
+    transition: .5s;
+    background: black;
+    color: white;
+    animation: atent 2.5s infinite;
+}
+
+canvas{
+    display: none;
+}
+
+@keyframes atent{
+    50%{
+        background: white;
+        color: black;
+    }
+    100%{
+        background: black;
+        color: white;
+    }
+}
+
+.right{
+    width: 58%;
+    height: 285px;
+}
+.right .img{
+    width: 100%;
+    height: 100%;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+}
+button{
+    cursor: pointer;
+}
+button.active{
+    background: linear-gradient(45deg, black, #202020 , #5e5e5e3d);
+    color: white;
+}
+  
+    @media (max-width:750px) {
+       .card{
+        width: 500px;
+       }
+       .card-body{
+        flex-direction: column-reverse;
+       }
+       .left{
+        width: 100%;
+       }
+       .nasted_card{
+        height: 124px;
+        overflow: auto;
+       }
+       .rotates_flips_btns{
+        justify-content: space-around;
+       }
+       .right{
+width: 100%;
+margin-bottom: 7px;
+       }
+
+    }
+    @media (max-width:520px) {
+        .card{
+         width: 350px;
+        }
+        .right{
+            height: 230px;
+}
+     }
+    

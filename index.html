@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PhotoEditor</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <header class="heading">Photo Editor</header>
+        <div class="card-body">
+            <div class="left">
+                <div class="nasted_card filters disable">
+                    <div class="sub-heading">Filters</div>
+                    <div class="filter_styles">
+
+                        <div><button id="B" class="active">Brightness</button></div>
+                        <div><button id="G" class="">Grayscale</button></div>
+                        <div><button id="S" class="">Saturation</button></div>
+                        <div><button id="I" class="">Invertion</button></div>
+
+                    </div>
+                    <div class="filter_manager">
+                        <div class="filter_details"> <span class="sub-heading" selected="B">Brightness</span> <span
+                                class="sub-heading">100%</span></div>
+                        <input max="200" type="range">
+                    </div>
+                    <div class="rotates_flips">
+                        <div class="sub-heading">Rotate and Flip</div>
+                        <div class="rotates_flips_btns">
+                            <div class="btn"><button id="left"><span class="mdi mdi-rotate-left"></span></button></div>
+                            <div class="btn"><button id="right"><span class="mdi mdi-rotate-right"></span></button>
+                            </div>
+                            <div class="btn"><button id="horizontal"><span
+                                        class="mdi mdi-reflect-horizontal"></span></button></div>
+                            <div class="btn"><button id="vertical"><span
+                                        class="mdi mdi-reflect-vertical"></span></button></div>
+                        </div>
+                    </div>
+                    <div class="reset"><button class="reset">Reset Filters</button></div>
+
+                </div>
+                <div class="img_rel">
+                    <input type="file" hidden class="input_file">
+                    <div class="error"></div>
+                    <button class="choose_file clickme">Choose file</button>
+                    <button class="save_file">Save image</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="img">
+                    <img src="./css/img.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/countries.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
