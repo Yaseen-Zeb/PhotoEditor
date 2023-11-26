@@ -31,6 +31,7 @@ file_input.onchange = () => {
          choose_file_btn.classList.remove("clickme");
          nasted_card.classList.remove("disable");
          image.src = URL.createObjectURL(loaded_image);
+         console.log(URL.createObjectURL(loaded_image))
       } else {
          error.style.display = "block";
          error.textContent = "Select image file."
